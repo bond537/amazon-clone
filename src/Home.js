@@ -12,12 +12,14 @@ function Home() {
         />
         <div className="home-row">
           <Product
-            title="The lean Startup"
-            price={19.99}
-            image="https://images-na.ssl-images-amazon.com/images/I/41Ag4WE7uyL._AC_UL160_.jpg"
+            title="Marvel’s Spider-Man: Miles Morales Launch Edition – PlayStation 5"
+            id="123"
+            price={49.88}
+            image="https://m.media-amazon.com/images/I/71CqfmZX3PL._AC_UY327_FMwebp_QL65_.jpg"
             rating={5}
           />
           <Product
+            id="456"
             title="Kit Cat Klock Gentlemen The Original (Classic Black)"
             image="https://images-na.ssl-images-amazon.com/images/I/51MwHeLSx2L._AC_SY879_.jpg"
             rating={3}
@@ -26,19 +28,27 @@ function Home() {
         </div>
         <div className="home-row">
           <Product
+            id="789"
             title="Ninja OS101 Foodi Pressure Cooker and Air Fryer"
             price={129.99}
             rating={2}
             image="https://m.media-amazon.com/images/I/410QLbTnUUL._AC_SY240_.jpg"
           />
           <Product
+            id="321"
             image="https://images-na.ssl-images-amazon.com/images/I/71c%2BZE2oMrL._AC_SX522_.jpg"
             title="Sunco Lighting 10 Pack WiFi LED Smart Bulb, BR30, 8W, Color Changing (RGB & CCT), Dimmable, 650 LM, Compatible with Amazon Alexa & Google Assistant - No Hub Required"
             price={120.99}
             rating={4}
           />
 
-          <Product />
+          <Product 
+            id='12312'
+            image="https://m.media-amazon.com/images/I/81iR0aGNJ5L._AC_UY654_FMwebp_QL65_.jpg"
+            title="Cyberpunk 2077 - PlayStation 4"
+            price={59.99}
+            rating={5}
+          />
         </div>
         <div className="home-row">
           <Product />
