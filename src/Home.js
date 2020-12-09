@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Product from "./Product.js";
+import Footer from "./Footer.js";
 function Home() {
   return (
     <div className="Home">
@@ -30,7 +31,7 @@ function Home() {
           <Product
             id="789"
             title="Ninja OS101 Foodi Pressure Cooker and Air Fryer"
-            price={129.99}
+            price={99.09}
             rating={2}
             image="https://m.media-amazon.com/images/I/410QLbTnUUL._AC_SY240_.jpg"
           />
@@ -42,8 +43,8 @@ function Home() {
             rating={4}
           />
 
-          <Product 
-            id='12312'
+          <Product
+            id="12312"
             image="https://m.media-amazon.com/images/I/81iR0aGNJ5L._AC_UY654_FMwebp_QL65_.jpg"
             title="Cyberpunk 2077 - PlayStation 4"
             price={59.99}
@@ -51,10 +52,18 @@ function Home() {
           />
         </div>
         <div className="home-row">
-          <Product />
+          <Product
+            id="2312314"
+            image="https://m.media-amazon.com/images/I/81iR0aGNJ5L._AC_UY654_FMwebp_QL65_.jpg"
+            title="Cyberpunk 2077 - PlayStation 4"
+            price={59.99}
+            rating={5}
+          />
         </div>
         <div className="home-row"></div>
+        <Footer />
       </div>
+      
     </div>
   );
 }

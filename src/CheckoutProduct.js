@@ -13,8 +13,8 @@ function getUnfilled(rating) {
   }
 }
 
-function CheckoutProduct({ id, image, title, price, rating }) {
-  const [{ basket }, dispatch] = useStateValue();
+function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
+  const [{ basket }, dispatch] = useStateValue(); //API to get the state of the basket
   const removeFromBasket = () => {
     dispatch({ type: "REMOVE_FROM_BASKET", id: id });
   };
@@ -39,9 +39,11 @@ function CheckoutProduct({ id, image, title, price, rating }) {
               return <StarBorderIcon style={{ color: "rgb(240, 193, 75)" }} />;
             })}
         </div>
-        <button onClick={removeFromBasket} className="checkoutProduct-button">
-          Remove from cart
-        </button>
+        {!hideButton && (
+          <button onClick={removeFromBasket} className="checkoutProduct-button">
+            Remove from cart
+          </button>
+        )}
       </div>
     </div>
   );

@@ -32,7 +32,9 @@ function Header() {
         {/* sign in */}
         <Link to={!user && "/login"}>
           <div onClick={handleAuthentication} className="header-option">
-            <span className="header-optionLineOne">Hello {user ? user.email : 'Guest'}</span>
+            <span className="header-optionLineOne">
+              Hello {user ? user.email : "Guest"}
+            </span>
             <span className="header-optionLineTwo">
               {user ? "Sign Out" : "Sign In"}
             </span>
@@ -40,10 +42,12 @@ function Header() {
         </Link>
 
         {/* returns and orders */}
-        <div className="header-option">
-          <span className="header-optionLineOne">Returns</span>
-          <span className="header-optionLineTwo">& Orders</span>
-        </div>
+        <Link to="/Orders">
+          <div className="header-option">
+            <span className="header-optionLineOne">Returns</span>
+            <span className="header-optionLineTwo">& Orders</span>
+          </div>
+        </Link>
 
         {/* prime */}
         <div className="header-option">
