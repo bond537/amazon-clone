@@ -16,6 +16,13 @@ function Login() {
       .then((auth) => history.push("/"))
       .catch((error) => alert(error.message));
   };
+  const demoSignIn = (e) => {
+    e.preventDefault();
+    auth
+      .signInWithEmailAndPassword("demo@demo.com", "demopassword")
+      .then((auth) => history.push("/"))
+      .catch((error) => alert(error.message));
+  };
   const register = (e) => {
     e.preventDefault();
     //some fancy firebase register shit
@@ -59,6 +66,14 @@ function Login() {
             className="login-sign-in-button"
           >
             Sign in
+          </button>
+
+          <button
+            onClick={demoSignIn}
+            type="submit"
+            className="login-sign-in-button"
+          >
+            Demo Login
           </button>
         </form>
         <p>

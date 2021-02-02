@@ -3,9 +3,44 @@
   display: flex;
   align-items: center;
   background-color: #131921;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   z-index: 100;
+}
+
+.subHeader {
+  height: 39px;
+  display: flex;
+  align-items: center;
+  background-color: #232f3e;
+  /* position: sticky; */
+  top: 0;
+  z-index: 100;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.subHeader > p {
+  color: white;
+  margin: 5px 0 6px 0;
+  padding: 8px 9px;
+  display: flex;
+  font-size: 14px;
+}
+
+.subHeader > h4 {
+  color: white;
+
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 8px 6px 8px;
+  margin: 6px 2px 7px 35px;
+  line-height: 15px;
+}
+
+.hamburger {
+  color: white;
+  margin-left: 20px;
 }
 
 .header-logo {

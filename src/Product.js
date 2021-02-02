@@ -3,6 +3,9 @@ import "./Product.css";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 import StarIcon from "@material-ui/icons/Star";
 import { useStateValue } from "./StateProvider";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+toast.configure();
 function getUnfilled(rating) {
   if (rating) {
     let x = 5 - rating;
@@ -28,6 +31,10 @@ function Product({ id, title, image, price, rating, alt }) {
         price: price,
         rating: rating,
       },
+    });
+    toast(title + " Added to Cart", {
+      position: toast.POSITION.BOTTOM_RIGHT,
+      hideProgressBar: true,
     });
   };
   return (
