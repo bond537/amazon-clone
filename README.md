@@ -1,3 +1,8 @@
+A clone of amazon build in react
+Full stack implementation using firebase for a noSQL database to store info and authentication.
+
+Live Site: https://clone-f48db.web.app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
