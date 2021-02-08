@@ -9,13 +9,12 @@ import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
 import Payment from "./Payment";
 import Footer from "./Footer";
-import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import Orders from "./Orders";
+import { deliverPromise } from "./stripePromise";
 
-const promise = loadStripe(
-  "pk_test_51HwCcnFZ3aUNhqyFGG03o5ESkRt03xmK4SIBQxkn8b0KNyxwWRUJm8ywYCQY8ncMluHuhpaiOMdwlVrUb334SJng00AAwiJr9D"
-);
+//deliverPromise is in separate file for security. and is in .gitignore
+const promise = deliverPromise();
 
 function App() {
   const [{}, dispatch] = useStateValue();

@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#Auth Security
+/src/firebase.js
+/src/stripePromise.js

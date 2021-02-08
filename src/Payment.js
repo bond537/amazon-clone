@@ -37,7 +37,7 @@ function Payment() {
     getClientSecret();
   }, [basket]);
 
-  console.log("the secret is: ", clientSecret);
+  // console.log("the secret is: ", clientSecret);
 
   const handleSubmit = async (event) => {
     //fancy stripe stuff
@@ -139,6 +139,7 @@ function Payment() {
                 <button disabled={processing || disabled || succeeded}>
                   <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
                 </button>
+                <p>Test card is 42 repeating until full</p>
               </div>
               {/* errors */}
               {error && <div>{error}</div>}
